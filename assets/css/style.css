@@ -13,7 +13,7 @@
 :root {
     --main-color: #241f2a;
     --second-color: #f9edff;
-    --third-color: #901CE8;
+    --third-color: #7d00dd;
     --fourth-color: #5A3BF5;
 }
 
@@ -22,3 +22,54 @@ body {
     background-color: var(--main-color);
     color: var(--second-color);
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--second-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li{
+    /* enlever les listes à puces */
+    list-style: none; 
+}
+
+/*Underline effect*/
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--third-color);
+    transition: width 0.3s ease;
+}
+
+/*Underline effect*/
+nav ul li a:hover {
+    color: var(--third-color);
+}
+nav ul li a:hover::after {
+    width: 70%;
+}
+
