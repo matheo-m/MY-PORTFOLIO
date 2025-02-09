@@ -16,6 +16,7 @@
 header {
     position: fixed;
     width: 100%;
+    background: rgba(36, 31, 42, 0.8);
 }
 
 body {
@@ -162,4 +163,32 @@ footer {
     justify-content: center;
     align-items: center;
     min-height: 6vh;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5vw;
+    }
+
+
+.hero-section {
+    flex-direction: column;
+}
+
+    nav ul {
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        list-style: none;
+    }
+    .logo-text{
+        font-size: 4vw;
+    }
 }
