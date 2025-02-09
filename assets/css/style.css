@@ -1,9 +1,5 @@
-.hero-pic img {
-    width: 500px;
-    height: 500px;
-}
-
 * {
+    box-sizing: border-box;
     font-family: "Raleway", serif;
     text-decoration: none;
     padding: 0;
@@ -12,9 +8,14 @@
 
 :root {
     --main-color: #241f2a;
-    --second-color: #f9edff;
+    --second-color: #fefdff;
     --third-color: #7d00dd;
     --fourth-color: #5A3BF5;
+}
+
+header {
+    position: fixed;
+    width: 100%;
 }
 
 body {
@@ -47,9 +48,9 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li{
+nav ul li {
     /* enlever les listes à puces */
-    list-style: none; 
+    list-style: none;
 }
 
 /*Underline effect*/
@@ -69,7 +70,96 @@ nav ul li a::after {
 nav ul li a:hover {
     color: var(--third-color);
 }
+
 nav ul li a:hover::after {
     width: 70%;
 }
 
+
+
+/* Section principale */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 95vh;
+    /* flex-direction: column; */
+}
+
+.hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    overflow: hidden;
+    border: 10px solid var(--third-color);
+    box-shadow: 5px 7px 25px var(--third-color);
+}
+
+.hero-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hero-pic img:hover {
+    transform: scale(1.1);
+}
+
+.hero-text {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 2rem;
+
+}
+
+h1 {
+    font-size: 14px;
+}
+
+h2 {
+    color: var(--fourth-color);
+    font-size: 3rem;
+}
+
+.btn-group {
+    margin: 3rem 0;
+}
+
+.btn {
+    border: 2px solid var(--fourth-color);
+    color: var(--second-color);
+    background-color: var(--main-color);
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
+}
+
+.btn:hover {
+    background-color: var(--fourth-color);
+    transition: 0.7s;
+}
+
+.social a {
+    margin: 0 10px;
+    color: var(--second-color);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.social a:hover {
+    color: var(--fourth-color);
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6vh;
+}
