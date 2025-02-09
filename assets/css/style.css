@@ -1,5 +1,24 @@
-.hero-pic img{
+.hero-pic img {
     width: 500px;
     height: 500px;
 }
 
+* {
+    font-family: "Raleway", serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #241f2a;
+    --second-color: #f9edff;
+    --third-color: #901CE8;
+    --fourth-color: #5A3BF5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-color);
+    color: var(--second-color);
+}
