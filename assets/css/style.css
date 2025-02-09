@@ -113,6 +113,21 @@ nav ul li a:hover::after {
     transform: scale(1.1);
 }
 
+.logo-pic{
+    width: 100px;
+    height: 100px;
+}
+
+.logo-pic img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.logo-pic img:hover {
+    transform: scale(1.1);
+}
+
 .hero-text {
     max-width: 600px;
     display: flex;
