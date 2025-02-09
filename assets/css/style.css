@@ -266,3 +266,66 @@ footer {
     min-height: 95vh;
     flex-direction: column;
 }
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.78);
+}
+
+.form-example {
+    margin-bottom: 1.5rem;
+}
+
+.form-example label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    color: var(--second-color);
+    font-weight: 600;
+}
+
+.form-example input,
+.form-example textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--main-color);
+    background-color: var(--second-color);
+}
+
+.form-example textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.form-example input:focus,
+.form-example textarea:focus {
+    outline: none;
+    border-color: var(--third-color);
+}
+
+.form-btn {
+    text-align: right;
+}
+
+.form-btn input[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--third-color);
+    color: var(--second-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+}
+
+.form-btn input[type="submit"]:hover {
+    background-color: var(--fourth-color);
+}
