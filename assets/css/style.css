@@ -13,6 +13,10 @@
     --fourth-color: #5A3BF5;
 }
 
+main {
+    padding-top: 3rem;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -196,21 +200,52 @@ footer {
 
 .portfolio-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    align-content: center;
     align-items: center;
     text-align: center;
     min-height: 95vh;
+    max-width: 1600px;
     flex-direction: row;
+    margin: 0 auto;
 }
+
+.portfolio-section2 {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    /* min-height: 95vh; */
+    /* max-width: 1600px; */
+    /* flex-direction: row; */
+    /* margin: 0 auto; */
+}
+
 .portfolio-pic {
     width: 300px;
     height: 300px;
     border-radius: 5%;
     overflow: hidden;
     border: 10px solid var(--third-color);
+    margin: 1rem;
     /* box-shadow: 5px 7px 25px var(--third-color); */
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
+}
+
+.portfolio-text {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    /* width: 300px;
+    height: 300px; */
+    margin: 1rem;
 }
 .portfolio-pic img {
     width: 100%;
@@ -218,22 +253,8 @@ footer {
     object-fit: cover;
     transition: 0.5s;
 }
-.portfolio-pic h3 {
-    margin: 0;
-    padding: 1rem;
-    text-align: center;
-}
 
 .portfolio-pic img:hover {
     transform: scale(1.1);
 }
 
-.portfolio-text {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    padding: 2rem;
-
-}
