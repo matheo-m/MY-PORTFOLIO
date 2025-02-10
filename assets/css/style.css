@@ -14,7 +14,7 @@
 }
 
 main {
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
 header {
@@ -93,7 +93,7 @@ nav ul li a:hover::after {
     flex-direction: row;
 }
 
-.hero-pic{
+.hero-pic {
     width: 300px;
     height: 300px;
     border-radius: 5%;
@@ -114,7 +114,7 @@ nav ul li a:hover::after {
     transform: scale(1.1);
 }
 
-.logo-pic{
+.logo-pic {
     width: 100px;
     height: 100px;
 }
@@ -177,7 +177,7 @@ h2 {
 
 .social a:hover {
     color: var(--fourth-color);
-    
+
 }
 
 footer {
@@ -198,20 +198,32 @@ footer {
     }
 
 
-.hero-section {
-    flex-direction: column;
-}
-
+    
     nav ul {
         gap: 1rem;
         display: flex;
         flex-direction: column;
     }
-    li{
+
+    li {
         list-style: none;
     }
-    .logo-text{
+    
+    .logo-text {
         font-size: 4vw;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        padding-top: 10rem;
+    }
+
+    .contact-section {
+        padding-top: 4rem;
+    }
+
+    .portfolio-section {
+        padding-top: 7rem;
     }
 }
 
@@ -225,7 +237,11 @@ footer {
     min-height: 80vh;
     max-width: 1600px;
     flex-direction: row;
-    margin: 2rem auto;
+    margin: 2rem;
+
+    /* margin: 2rem auto; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .portfolio-section2 {
@@ -258,12 +274,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 
     /* width: 300px;
     height: 300px; */
     margin: 1rem;
 }
+
 .portfolio-pic img {
     width: 100%;
     height: 100%;
