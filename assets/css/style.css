@@ -269,8 +269,37 @@ footer {
     transition: 0.5s;
 }
 
+.portfolio-pic {
+    position: relative;
+}
+
 .portfolio-pic img:hover {
     transform: scale(1.1);
+    filter: brightness(0.5);
+}
+
+.portfolio-pic figcaption {
+    color: var(--second-color);
+    /* font-size: 1.5rem; */
+    /* font-weight: 600; */
+    /* margin: 1rem; */
+    position: absolute;
+    bottom: 10px;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.portfolio-pic figcaption h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+.portfolio-pic:hover figcaption {
+    opacity: 1;
 }
 
 .contact-section {
