@@ -10,7 +10,7 @@
     --main-color: #241f2a;
     --second-color: #fefdff;
     --third-color: #7d00dd;
-    --fourth-color: #5A3BF5;
+    --fourth-color: #5a3bf5;
 }
 
 main {
@@ -25,7 +25,7 @@ header {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--main-color);
     color: var(--second-color);
 }
@@ -61,7 +61,7 @@ nav ul li {
 
 /*Underline effect*/
 nav ul li a::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -81,8 +81,6 @@ nav ul li a:hover::after {
     width: 70%;
 }
 
-
-
 /* Section principale */
 .hero-section {
     display: flex;
@@ -96,10 +94,9 @@ nav ul li a:hover::after {
 .hero-pic {
     width: 300px;
     height: 300px;
-    border-radius: 5%;
+    border-radius: 1%;
     overflow: hidden;
-    border: 10px solid var(--third-color);
-    /* box-shadow: 5px 7px 25px var(--third-color); */
+    border: 5px solid var(--fourth-color);
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
 }
 
@@ -136,7 +133,6 @@ nav ul li a:hover::after {
     align-items: center;
     text-align: left;
     padding: 2rem;
-
 }
 
 h1 {
@@ -151,6 +147,10 @@ h2 {
 
 .btn-group {
     margin: 3rem 0;
+}
+
+.btn-group2 {
+    margin: 2rem 0;
 }
 
 .btn {
@@ -170,14 +170,14 @@ h2 {
 
 .social a {
     margin: 0 10px;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
     color: var(--second-color);
     font-size: 18px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 .social a:hover {
     color: var(--fourth-color);
-
 }
 
 footer {
@@ -186,7 +186,6 @@ footer {
     align-items: center;
     min-height: 6vh;
 }
-
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -197,8 +196,6 @@ footer {
         font-size: 2.5vw;
     }
 
-
-    
     nav ul {
         gap: 1rem;
         display: flex;
@@ -208,7 +205,7 @@ footer {
     li {
         list-style: none;
     }
-    
+
     .logo-text {
         font-size: 4vw;
     }
@@ -258,13 +255,13 @@ footer {
 }
 
 .portfolio-pic {
+    margin: 1rem;
+
     width: 300px;
     height: 300px;
-    border-radius: 5%;
+    border-radius: 1%;
     overflow: hidden;
-    border: 10px solid var(--third-color);
-    margin: 1rem;
-    /* box-shadow: 5px 7px 25px var(--third-color); */
+    border: 5px solid var(--fourth-color);
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
 }
 
@@ -278,6 +275,7 @@ footer {
     /* width: 300px;
     height: 300px; */
     margin: 1rem;
+    padding: 3em;
 }
 
 .portfolio-pic img {
@@ -300,7 +298,9 @@ footer {
     color: var(--second-color);
     /* font-size: 1.5rem; */
     /* font-weight: 600; */
-    /* margin: 1rem; */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
     position: absolute;
     bottom: 10px;
     /* left: 50%; */
@@ -313,8 +313,6 @@ footer {
     font-size: 1.5rem;
     font-weight: 600;
 }
-
-
 
 .portfolio-pic:hover figcaption {
     opacity: 1;
