@@ -83,7 +83,7 @@ nav ul li a:hover::after {
     background-color: var(--second-color);
     color: var(--main-color);
     border: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
 }
 
@@ -241,12 +241,11 @@ footer {
 
     .hero-section {
         flex-direction: column;
-        padding-top: 10rem;
     }
 
     .hero-text {
         text-align: center;
-        padding: 0 1rem;
+        padding: 1.5rem 1rem;
     }
 
     .contact-section {
