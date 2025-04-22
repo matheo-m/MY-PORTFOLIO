@@ -13,14 +13,10 @@
     --fourth-color: #5a3bf5;
 }
 
-main {
-    padding-top: 6rem;
-}
-
 header {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    background: rgba(36, 31, 42, 0.8);
+    /* background: rgba(36, 31, 42, 0.8); */
     z-index: 1000;
 }
 
@@ -52,6 +48,7 @@ nav ul li a {
     border-radius: 20px;
     transition: all 0.3s ease;
     position: relative;
+    text-decoration: none;
 }
 
 nav ul li {
@@ -79,6 +76,33 @@ nav ul li a:hover {
 
 nav ul li a:hover::after {
     width: 70%;
+}
+
+/* card */
+.card {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.btn-primary {
+    background-color: var(--third-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--fourth-color);
+}
+
+.modal-content {
+    background-color: var(--second-color);
+    color: var(--main-color);
 }
 
 /* Section principale */
@@ -136,7 +160,7 @@ nav ul li a:hover::after {
     flex-direction: column;
     align-items: center;
     text-align: left;
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 h1 {
