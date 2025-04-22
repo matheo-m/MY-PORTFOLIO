@@ -223,12 +223,16 @@ footer {
         display: flex;
         flex-direction: column;
         font-size: 2.5vw;
+        align-items: center;
+        gap: 1rem;
     }
 
     nav ul {
         gap: 1rem;
         display: flex;
         flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
 
     li {
