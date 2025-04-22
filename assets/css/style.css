@@ -244,6 +244,11 @@ footer {
         padding-top: 10rem;
     }
 
+    .hero-text {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
     .contact-section {
         padding-top: 4rem;
     }
