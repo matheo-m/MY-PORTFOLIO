@@ -14,7 +14,7 @@
 }
 
 main {
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 header {
@@ -87,8 +87,12 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     flex-direction: row;
+
+    margin: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-pic {
@@ -184,7 +188,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 6vh;
+    /* min-height: 6vh; */
+    padding: 2rem 0;
 }
 
 /* Responsive */
@@ -231,12 +236,11 @@ footer {
     align-content: center;
     align-items: center;
     text-align: center;
-    min-height: 80vh;
+    /* min-height: 80vh; */
     max-width: 1600px;
     flex-direction: row;
-    margin: 2rem;
 
-    /* margin: 2rem auto; */
+    margin: 2rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -320,11 +324,15 @@ footer {
 
 .contact-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     text-align: center;
-    min-height: 90vh;
-    flex-direction: column;
+    /* min-height: 90vh; */
+    /* flex-direction: column; */
+
+    margin: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form {
