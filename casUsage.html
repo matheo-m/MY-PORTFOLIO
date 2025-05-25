@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mathéo Moussé</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <figure class="logo-pic">
+                    <img src="assets\img\logo_MM2.png" alt="Profil de Mathéo Moussé">
+                </figure>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="casUsage.html">Cas d'usage</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+
+            <h1>
+                Compromission d’un compte utilisateur en entreprise
+            </h1>
+
+            <h3 class="mt-4">Consigne :</h3>
+            <p>
+                Répondez de manière détaillée et constructive aux deux questions ci-dessous. Vous serez
+                évalué sur la qualité de vos réponses. Il n’y a pas de limite quant aux moyens que vous
+                pourrez mettre en œuvre pour répondre à chacune des questions.
+            </p>
+
+            <div class="accordion mt-4" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Définitions
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h3>Compte utilisateur</h3>
+                            <p>Un compte utilisateur est un identifiant personnel permettant à un employé d’accéder aux
+                                ressources du système d’information (SI) de l’entreprise, comme les messageries, les
+                                fichiers, les applications internes, etc. Il est généralement associé à un mot de passe
+                                et parfois à une authentification multifacteur (MFA).</p>
+                            <h3>Compromission de compte</h3>
+                            <p>La compromission d’un compte correspond à un accès non autorisé à ce compte par une
+                                personne malveillante. Cela peut résulter du vol de mot de passe, d’une attaque de
+                                phishing, ou d’une faille de sécurité.</p>
+                            <h3>Système d’information (SI)</h3>
+                            <p>Le système d’information d’une entreprise regroupe l’ensemble des moyens techniques,
+                                humains, logiciels et matériels qui permettent de stocker, traiter, sécuriser et
+                                transmettre l’information.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Question 1 : Quel risque y a-t-il à avoir un compte compromis au sein d’une
+                            entreprise ?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Un compte compromis peut entraîner plusieurs risques majeurs pour une entreprise :</p>
+                            <h3>1. Vol de données sensibles</h3>
+                            <p>Un compte compromis peut donner accès à :</p>
+                            <ul>
+                                <li>Des informations sensibles : documents internes, contrats, données personnelles (RH,
+                                    clients).</li>
+                                <li>Des informations stratégiques : plans d’affaires, codes sources, projets
+                                    confidentiels.</li>
+                            </ul>
+                            <p>Cela peut entraîner une fuite de données ou une violation du RGPD, passible de sanctions
+                                financières.</p>
+                            <h3>2. Escalade de privilèges</h3>
+                            <p>Un attaquant peut utiliser un compte standard pour tenter une élévation de privilèges,
+                                par exemple en compromettant un autre compte mieux doté en droits (admin local, AD,
+                                etc.).</p>
+                            <p>Cela permet un contrôle accru sur le réseau et les systèmes, voire une prise de contrôle
+                                complète.</p>
+                            <h3>3. Propagation de logiciels malveillants</h3>
+                            <p>Le compte compromis peut servir à :</p>
+                            <ul>
+                                <li>Installer des malware ou des ransomwares (Rançongiciel) sur le réseau de
+                                    l'entreprise.</li>
+                            </ul>
+                            <p>Cela peut causer une paralysie des systèmes, avec demande de rançon et perte
+                                d’exploitation.</p>
+                            <h3>4. Usurpation d'identité</h3>
+                            <p>Les cybercriminels peuvent se faire passer pour des employés légitimes pour tromper
+                                d'autres membres de l'organisation ou des partenaires externes.</p>
+                            <p>Le compte légitime peut être utilisé pour :</p>
+                            <ul>
+                                <li>Envoyer des emails de phishing internes ou à des clients.</li>
+                            </ul>
+                            <h3>5. Atteinte à la réputation</h3>
+                            <p>Une compromission rendue publique peut :</p>
+                            <ul>
+                                <li>Nuire à la confiance des clients et des partenaires.</li>
+                                <li>Avoir un impact boursier ou commercial, surtout dans les secteurs réglementés
+                                    (banque, santé, télécoms).</li>
+                            </ul>
+                            <p>L’image de l’entreprise est durablement affectée.</p>
+                            <h3>6. Coûts financiers et juridiques</h3>
+                            <p>Les conséquences incluent :</p>
+                            <ul>
+                                <li>Fraude financière : Les comptes compromis peuvent être utilisés pour effectuer des
+                                    transactions frauduleuses ou des virements bancaires non autorisés.</li>
+                                <li>Détection, réponse à incident, audit, reconstruction du SI : coûts techniques
+                                    élevés.</li>
+                                <li>Amendes RGPD, actions judiciaires : risques juridiques.</li>
+                                <li>Pertes de revenus et opportunités : conséquences économiques.</li>
+                            </ul>
+                            <h3>Cas réels de compromission</h3>
+                            <ul>
+                                <li><strong>Microsoft Exchange (2021)</strong> : exploitation de failles et comptes
+                                    compromis, fuite massive de données. <a
+                                        href="https://www.lemagit.fr/actualites/252507160/Exchange-une-faille-de-lauto-decouverte-laisse-fuiter-des-identifiants"
+                                        target="_blank">Lire l'article</a></li>
+                                <li><strong>Uber (2022)</strong> : compte d’un employé compromis par ingénierie sociale,
+                                    accès aux systèmes internes. <a
+                                        href="https://www.bitdefender.com/fr-fr/blog/hotforsecurity/piratage-des-systemes-internes-duber-par-un-adolescent"
+                                        target="_blank">Lire l'article</a></li>
+                                <li><strong>Cyberattaque contre un groupe hospitalier de Rennes (2024)</strong> : un
+                                    ancien responsable de la sécurité informatique arrêté. <a
+                                        href="https://www.tf1info.fr/justice-faits-divers/video-tf1-piratage-cyberattaque-contre-un-groupe-hospitalier-de-rennes-un-ancien-responsable-de-la-securite-informatique-arrete-2341293.html"
+                                        target="_blank">Lire l'article</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Question 2 : Quelles sont les attaques possibles pour compromettre un compte utilisateur ?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Un attaquant dispose de nombreuses techniques pour compromettre un compte utilisateur.
+                                Ces attaques exploitent à la fois des faiblesses humaines, techniques et
+                                organisationnelles. Voici les attaques les plus courantes :</p>
+                            <h3>1. Phishing (Hameçonnage)</h3>
+                            <p>Le phishing est l’attaque la plus fréquente. L’attaquant envoie un email (ou SMS)
+                                usurpant l’identité d’un tiers de confiance (banque, Microsoft, DSI…) pour pousser
+                                l’utilisateur à :</p>
+                            <ul>
+                                <li>cliquer sur un lien malveillant</li>
+                                <li>saisir ses identifiants sur une fausse page de connexion</li>
+                                <li>ou ouvrir une pièce jointe infectée</li>
+                            </ul>
+                            <p><strong>Variantes :</strong> spear-phishing (ciblé), smishing (SMS), vishing (appel
+                                vocal).</p>
+                            <h3>2. Ingénierie sociale</h3>
+                            <p>Manipulation psychologique exploitant la confiance ou la méconnaissance de la victime :
+                            </p>
+                            <ul>
+                                <li>usurpation d’identité d’un collègue ou du support informatique</li>
+                                <li>demande d’accès "urgent" à un service</li>
+                                <li>création de scénarios crédibles (faux incidents, fausses urgences)</li>
+                            </ul>
+                            <h3>3. Brute Force et attaques par dictionnaire</h3>
+                            <p>L’attaquant tente de deviner le mot de passe par des essais automatisés :</p>
+                            <ul>
+                                <li><strong>Brute force :</strong> toutes les combinaisons possibles</li>
+                                <li><strong>Dictionnaire :</strong> liste de mots de passe courants</li>
+                            </ul>
+                            <p>Risque élevé si la politique de mot de passe est faible ou absente.</p>
+                            <h3>4. Exploitation de vulnérabilités</h3>
+                            <p>Certaines applications ou services web (portails d’authentification, serveurs RDP, VPN)
+                                peuvent contenir des failles permettant :</p>
+                            <ul>
+                                <li>d’intercepter des identifiants</li>
+                                <li>de contourner l’authentification</li>
+                                <li>ou d’injecter des commandes (SQL Injection, XSS)</li>
+                            </ul>
+                            <h3>5. Keyloggers et Malwares</h3>
+                            <p>Un malware installé sur le poste utilisateur (via pièce jointe ou site piégé) peut :</p>
+                            <ul>
+                                <li>enregistrer les frappes clavier (keylogger)</li>
+                                <li>intercepter les mots de passe</li>
+                            </ul>
+                            <h3>6. Man-in-the-Middle</h3>
+                            <p>L’attaquant intercepte les communications entre l’utilisateur et le serveur (ex : Wi-Fi
+                                public non sécurisé) pour :</p>
+                            <ul>
+                                <li>capturer des identifiants</li>
+                            </ul>
+                            <h3>7. Utilisation de mots de passe faibles ou réutilisés</h3>
+                            <p>Les mots de passe simples ou réutilisés sur plusieurs comptes sont plus faciles à
+                                compromettre.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Question 3 : Comment protéger le système d’information d’une entreprise d’une
+                            compromission de compte ?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>La protection du système d'information (SI) contre la compromission de comptes repose sur
+                                une stratégie de défense en profondeur, combinant des mesures techniques,
+                                organisationnelles et humaines. L’objectif est de réduire la surface d’attaque, détecter
+                                les comportements anormaux et limiter l’impact en cas de compromission.</p>
+                            <h3>1. Renforcer l’authentification des utilisateurs</h3>
+                            <ul>
+                                <li><strong>Politique de mots de passe robuste :</strong>
+                                    <ul>
+                                        <li>Longueur minimale, complexité (majuscule, chiffre, caractère spécial)</li>
+                                        <li>Utilisation d’un gestionnaire de mot de passe</li>
+                                        <li>Détection de mots de passe compromis (via HaveIBeenPwned par exemple)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Authentification multifacteur (MFA) :</strong>
+                                    <ul>
+                                        <li>Ajout d’un deuxième facteur (application mobile, clé PKI, SMS) pour
+                                            sécuriser les connexions.</li>
+                                        <li>Même en cas de vol de mot de passe, l’accès reste protégé.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Accès conditionnel :</strong>
+                                    <ul>
+                                        <li>Bloquer l’accès depuis des pays à risque, ou en dehors des heures ouvrées.
+                                        </li>
+                                        <li>Fonctionnalité intégrée à Microsoft Entra ID (ex-Azure AD Conditional
+                                            Access).</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3>2. Sensibiliser les utilisateurs</h3>
+                            <ul>
+                                <li><strong>Formation continue :</strong>
+                                    <ul>
+                                        <li>Former régulièrement les collaborateurs à :</li>
+                                        <ul>
+                                            <li>la détection de phishing</li>
+                                            <li>les bonnes pratiques d’hygiène numérique</li>
+                                            <li>la reconnaissance des comportements suspects</li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li><strong>Simulations d’attaques :</strong>
+                                    <ul>
+                                        <li>Lancer des campagnes de phishing simulé par mail pour tester la réactivité
+                                            des employés.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3>3. Surveiller et détecter les comportements suspects</h3>
+                            <ul>
+                                <li><strong>Supervision des journaux et des accès :</strong>
+                                    <ul>
+                                        <li>Surveillance des connexions anormales (heure inhabituelle, IP géolocalisée à
+                                            l’étranger, multiples échecs)</li>
+                                        <li>Alertes en cas d’activités suspectes : MFA désactivé, changements de droits,
+                                            ouverture massive de fichiers</li>
+                                    </ul>
+                                </li>
+                                <li><strong>SIEM :</strong>
+                                    <ul>
+                                        <li>SIEM (Security Information and Event Management) : agrège et corrèle les
+                                            événements</li>
+                                        <li>Exemple : Microsoft Sentinel pour centraliser et analyser les logs de
+                                            sécurité.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3>4. Appliquer le principe du moindre privilège</h3>
+                            <ul>
+                                <li><strong>Gestion fine des droits d’accès :</strong>
+                                    <ul>
+                                        <li>Attribution des droits minimum nécessaires à chaque rôle utilisateur</li>
+                                        <li>Suppression immédiate des comptes inactifs ou d’anciens employés</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Comptes à privilèges séparés :</strong>
+                                    <ul>
+                                        <li>Compte “admin” distinct du compte de travail quotidien</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Mises à jour régulières des logiciels :</strong>
+                                    <ul>
+                                        <li>Maintenir les systèmes et les logiciels à jour pour corriger les
+                                            vulnérabilités connues</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Question 4 : Quelles sont les solutions Microsoft qui peuvent permettre de lutter contre la
+                            compromission de comptes ?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Pour lutter contre la compromission de comptes, Microsoft propose plusieurs solutions
+                                intégrées qui aident à sécuriser les environnements informatiques des entreprises. Voici
+                                quelques-unes des principales solutions Microsoft :</p>
+                            <h3>1. Microsoft Defender for Office 365</h3>
+                            <p><strong>Description :</strong> Microsoft Defender for Office 365 est une solution de
+                                sécurité qui offre une protection avancée contre les menaces par e-mail, les liens
+                                malveillants (URL), et les pièces jointes infectées.</p>
+                            <p><strong>Fonctionnalités clés :</strong></p>
+                            <ul>
+                                <li><strong>Protection contre le phishing :</strong> Détecte et bloque les tentatives de
+                                    phishing ciblant les utilisateurs.</li>
+                                <li><strong>Protection contre les logiciels malveillants :</strong> Analyse les pièces
+                                    jointes et les liens pour détecter et bloquer les logiciels malveillants.</li>
+                                <li><strong>Investigation et réponse automatisées (AIR) :</strong> Automatise la réponse
+                                    aux incidents de sécurité, réduisant ainsi le temps de réponse aux menaces.</li>
+                            </ul>
+                            <h3>2. Microsoft Entra ID (anciennement Azure Active Directory)</h3>
+                            <p><strong>Description :</strong> Microsoft Entra ID est un service d'identité et d'accès
+                                basé sur le cloud qui aide les employés à se connecter et à accéder aux ressources
+                                internes et externes.</p>
+                            <p><strong>Fonctionnalités clés :</strong></p>
+                            <ul>
+                                <li><strong>Authentification multifacteur (MFA) :</strong> Ajoute une couche
+                                    supplémentaire de sécurité en exigeant une deuxième forme de vérification.</li>
+                                <li><strong>Gestion des identités et des accès :</strong> Permet de gérer les accès des
+                                    utilisateurs et de sécuriser les identités dans un environnement hybride ou cloud.
+                                </li>
+                                <li><strong>Protection des identités :</strong> Utilise l'apprentissage automatique pour
+                                    détecter les activités suspectes et les risques potentiels.</li>
+                            </ul>
+                            <h3>3. Microsoft Sentinel</h3>
+                            <p><strong>Description :</strong> Microsoft Sentinel est une solution de gestion des
+                                événements de sécurité et des informations (SIEM) qui offre une analyse de sécurité
+                                intelligente et une réponse aux menaces.</p>
+                            <p><strong>Fonctionnalités clés :</strong></p>
+                            <ul>
+                                <li><strong>Détection des menaces :</strong> Utilise l'IA pour détecter les menaces et
+                                    les comportements anormaux.</li>
+                                <li><strong>Réponse aux incidents :</strong> Fournit des outils pour enquêter sur les
+                                    incidents et y répondre rapidement.</li>
+                                <li><strong>Intégration avec d'autres outils Microsoft :</strong> S'intègre avec
+                                    d'autres solutions de sécurité Microsoft pour une protection complète.</li>
+                            </ul>
+                            <h3>4. Microsoft Defender pour le cloud</h3>
+                            <p><strong>Description :</strong> Microsoft Defender pour le cloud est une solution de
+                                protection des charges de travail hybrides qui offre une visibilité et un contrôle sur
+                                la sécurité des ressources cloud et locales.</p>
+                            <p><strong>Fonctionnalités clés :</strong></p>
+                            <ul>
+                                <li><strong>Évaluation de la sécurité :</strong> Évalue en continu la posture de
+                                    sécurité de vos ressources.</li>
+                                <li><strong>Protection contre les menaces :</strong> Détecte et répond aux menaces dans
+                                    les environnements cloud.</li>
+                                <li><strong>Gestion des vulnérabilités :</strong> Identifie et aide à corriger les
+                                    vulnérabilités dans vos systèmes.</li>
+                            </ul>
+                            <h3>5. Microsoft Defender XDR</h3>
+                            <p><strong>Description :</strong> Microsoft Defender XDR est une solution de détection et
+                                réponse étendue (XDR) qui intègre la protection contre les menaces sur les endpoints,
+                                les identités, les e-mails et les applications.</p>
+                            <p><strong>Fonctionnalités clés :</strong></p>
+                            <ul>
+                                <li><strong>Protection intégrée :</strong> Combine les signaux de sécurité de plusieurs
+                                    sources pour une détection et une réponse unifiées.</li>
+                                <li><strong>Automatisation et orchestration :</strong> Automatise les réponses aux
+                                    incidents pour une efficacité accrue.</li>
+                                <li><strong>Analyse des menaces :</strong> Fournit des informations détaillées sur les
+                                    menaces et les attaques.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="sources mt-4">
+                <h3>Sources</h3>
+                <div class="list-group">
+                    <a href="https://www.proofpoint.com/fr/blog/email-and-cloud-threats/microsoft-misses-account-compromise"
+                        target="_blank" class="list-group-item list-group-item-action">
+                        Microsoft Misses Account Compromise - Proofpoint
+                    </a>
+                    <a href="https://www.proofpoint.com/us/threat-reference/compromised-account" target="_blank"
+                        class="list-group-item list-group-item-action">
+                        Threat Reference: Compromised Account - Proofpoint
+                    </a>
+                    <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/piratage-de-compte"
+                        target="_blank" class="list-group-item list-group-item-action">
+                        Piratage de Compte - Cybermalveillance.gouv.fr
+                    </a>
+                    <a href="https://www.keepersecurity.com/blog/2023/10/31/compromised-online-account-what-it-is-and-how-to-prevent-it/"
+                        target="_blank" class="list-group-item list-group-item-action">
+                        Compromised Online Account - Keeper Security
+                    </a>
+                    <a href="https://www.silverfort.com/blog/3-cyberattacks-in-which-compromised-service-accounts-played-a-key-role/"
+                        target="_blank" class="list-group-item list-group-item-action">
+                        3 Cyberattacks with Compromised Service Accounts - Silverfort
+                    </a>
+                    <a href="https://www.splunk.com/fr_fr/blog/learn/siem-security-information-event-management.html"
+                        target="_blank" class="list-group-item list-group-item-action">
+                        SIEM: Security Information and Event Management - Splunk
+                    </a>
+                    <a href="https://tryhackme.com/room/xdrintroduction" target="_blank"
+                        class="list-group-item list-group-item-action">
+                        Introduction to XDR - TryHackMe
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Matheo Moussé. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
